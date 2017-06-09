@@ -90,7 +90,8 @@ if cave_choice == "L" or cave_choice =="LEFT":
   elif river_choice == "S" or river_choice == "SWIM":
     print("you dive into the water, which is pleasantly warm, and swim into darkness.")
     time.sleep(1)
-
+    print("suddenly, you are devoured by a hungry shark!")
+    print("GAME OVER!! :(")
   else:
       print("you turn sideways and walk into the cave's wall. the impact causes a stalactite to fall on your head.")
       print("GAME OVER :(")
