@@ -10,7 +10,7 @@ import time
 print("blimey! you have fallen into a small crevice! you see that the crevice spits into a left and right passage.")
 cave_choice = input()
 
-if cave_choice == "L" or =="LEFT":
+if cave_choice is "L" or cave_choice is"LEFT":
   print("you enter the left cave. the walls are slightly damp and there are numerous stalactites on the ceiling.")
   time.sleep(1)
   print("there is also a small pool in the middle of the room. the pool feeds to an underground river.")
@@ -22,7 +22,7 @@ if cave_choice == "L" or =="LEFT":
   print("do you get in the boat, swim down the river, or take the passage?")
   river_choice =  input("put B for boat, S for swim, or W for walk.")
 
-  if river_choice == "W" or == "WALK":
+  if river_choice is "W" or river_choice is "WALK":
     print("you walk to the passage and start down it.")
     time.sleep(1)
     print("you come into a beautiful cavern containing a shimmering waterfall.")
@@ -38,7 +38,7 @@ if cave_choice == "L" or =="LEFT":
     print("do you take the rope bridge, the stone bridge, or the river tunnel?")
     waterfall_choice = input("put R for the rope bridge, S for the stone, or T for the river tunnel.")
 
-    if waterfall_choice == "R" or == "ROPE":
+    if waterfall_choice is "R" or waterfall_choice is "ROPE":
       print("you start across the rope bridge. it sways in the slight breeze blowing up from the chasm.")
       time.sleep(1)
       print("afler several minutes of careful crawling, you reach the other side of the chasm.")
@@ -46,16 +46,16 @@ if cave_choice == "L" or =="LEFT":
       print("do you take the upper passage, the lower passage, or the middle passage?")
       chasm_choice = input("put U for the upper passage, L for the lower passage, or M for the middle passage.")
 
-      if chasm_choice == "U" or == "UP":
+      if chasm_choice is "U" or chasm_choice is "UP":
         print("")
 
-      elif chasm_choice == "L" or == "LOW":
+      elif chasm_choice is "L" or chasm_choice is "LOW":
         print("")
 
-      elif chasm_choice == "M" or == "MIDDLE":
+      elif chasm_choice is "M" or chasm_choice is "MIDDLE":
         print("")
 
-    elif waterfall_choice == "S" or == "STONE":
+    elif waterfall_choice is "S" or waterfall_choice is "STONE":
       print("you start walking across the stone bridge.")
       time.sleep(2)
       print("you see a glow deep in the chasm, lighting the sides of the walls.")
@@ -66,7 +66,7 @@ if cave_choice == "L" or =="LEFT":
       print("congradulations! you have found a balrog!!")
       print("the balrog instantly smashes you to pieces with his fire whip! you have died!")
       
-    elif waterfall_choice == "T" or == "TUNNEL":
+    elif waterfall_choice is "T" or waterfall_choice is "TUNNEL":
       print("you start down the tunnel, which begins to slope up.")
       time.sleep(1)
       print("you find that your path is blocked by a large snake with many heads! the snake quickly devours you!")
@@ -77,7 +77,7 @@ if cave_choice == "L" or =="LEFT":
       print("GAME OVER :(")
 
 
-  elif river_choice == "B" or == "BOAT":
+  elif river_choice is "B" or river_choice is "BOAT":
     print("you walk to the boat and hop in. the boat starts drifting into darkness.")
     time.sleep(1)
     print("you come into a large cavern containing many stalacitites.")
@@ -87,7 +87,7 @@ if cave_choice == "L" or =="LEFT":
     print("the dragon quickly toasts you to a crisp!")
     print("GAME OVER!! YOU LOSE!! :(")
 
-  elif river_choice == "S" or == "SWIM":
+  elif river_choice is "S" or river_choice is "SWIM":
     print("you dive into the water, which is pleasantly warm, and swim into darkness.")
     time.sleep(1)
     print("suddenly, you are devoured by a hungry shark!")
@@ -96,7 +96,7 @@ if cave_choice == "L" or =="LEFT":
       print("you turn sideways and walk into the cave's wall. the impact causes a stalactite to fall on your head.")
       print("GAME OVER :(")
 
-elif cave_choice == "R" or == "RIGHT":
+elif cave_choice is "R" or cave_choice is "RIGHT":
   print("you walk into the right passage. it begins to slope downward.")
   time.sleep(1)
   print("you see a rope ladder leading down into a dark pit.")
@@ -106,11 +106,11 @@ elif cave_choice == "R" or == "RIGHT":
   print("do you climb down or keep walking?")
   pit_choice = input("put C to climb or W to  walk.")
 
-  if pit_choice == "C" or == "CLIMB":
+  if pit_choice is "C" or pit_choice is "CLIMB":
     print("you climb down the ladder and into darkness.")
     time.sleep(1)
 
-  elif pit_choice == "W" or == "WALK":
+  elif pit_choice is "W" or pit_choice is "WALK":
     print("you start walking down the left passage. it slopes down at a 53-degree angle.")
     time.sleep(1)
     print("you come into a beautiful cavern containing a shimmering waterfall.")
@@ -126,7 +126,7 @@ elif cave_choice == "R" or == "RIGHT":
     print("do you take the rope bridge, the stone bridge, or the river tunnel?")
     waterfall_choice = input("put R for the rope bridge, S for the stone, or T for the river tunnel.")
 
-    if waterfall_choice == "R" or == "ROPE":
+    if waterfall_choice is "R" or waterfall_choice is "ROPE":
       print("you start across the rope bridge. it sways in the slight breeze blowing up from the chasm.")
       time.sleep(1)
       print("afler several minutes of careful crawling, you reach the other side of the chasm.")
@@ -134,16 +134,21 @@ elif cave_choice == "R" or == "RIGHT":
       print("do you take the upper passage, the lower passage, or the middle passage?")
       chasm_choice = input("put U for the upper passage, L for the lower passage, or M for the middle passage.")
 
-      if chasm_choice == "U" or == "UP":
+      if chasm_choice is "U" or chasm_choice is "UP":
+        print("you walk up the upper passage.")
+        time.sleep(1)
+        print("there is a dwarf in the room with you!")
+        print("he throws an axe at you!")
+        print("he misses, and the axe magically flies back to his hand,")
+        print("he runs back through the passage from whence he came.")
+
+      elif chasm_choice is "L" or chasm_choice is "LOW":
         print("")
 
-      elif chasm_choice == "L" or == "LOW":
+      elif chasm_choice is "M" or chasm_choice is "MIDDLE":
         print("")
 
-      elif chasm_choice == "M" or == "MIDDLE":
-        print("")
-
-    elif waterfall_choice == "S" or == "STONE":
+    elif waterfall_choice is "S" or waterfall_choice is "STONE":
       print("you start walking across the stone bridge.")
       time.sleep(2)
       print("you see a glow deep in the chasm, lighting the sides of the walls.")
@@ -154,7 +159,7 @@ elif cave_choice == "R" or == "RIGHT":
       print("congradulations! you have found a balrog!!")
       print("the balrog instantly smashes you to pieces with his fire whip! you have died!")
       
-    elif waterfall_choice == "T" or == "TUNNEL":
+    elif waterfall_choice is "T" or waterfall_choice is "TUNNEL":
       print("you start down the tunnel, which begins to slope up.")
       time.sleep(1)
       print("you find that your path is blocked by a large snake with many heads! the snake quickly devours you!")
