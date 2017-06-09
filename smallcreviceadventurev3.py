@@ -80,6 +80,12 @@ if cave_choice == "L" or cave_choice =="LEFT":
   elif river_choice == "B" or river_choice == "BOAT":
     print("you walk to the boat and hop in. the boat starts drifting into darkness.")
     time.sleep(1)
+    print("you come into a large cavern containing many stalacitites.")
+    print("there are diamonds here!")
+    time.sleep(1)
+    print("there is also a large dragon here!")
+    print("the dragon quickly toasts you to a crisp!")
+    print("GAME OVER!! YOU LOSE!! :(")
 
   elif river_choice == "S" or river_choice == "SWIM":
     print("you dive into the water, which is pleasantly warm, and swim into darkness.")
