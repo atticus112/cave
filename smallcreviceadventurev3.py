@@ -8,7 +8,7 @@ print("~~~~~~~~~~~~CREATED BY ATTICUS BHAT AND LINUS SKUCAS~~~~~~~~~~~")
 print("~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~")
 import time
 print("blimey! you have fallen into a small crevice! you see that the crevice spits into a left and right passage.")
-cave_choice = input("L" or cave_choice == "LEFT")
+cave_choice = input()
 
 if cave_choice == "L" or cave_choice =="LEFT":
   print("you enter the left cave. the walls are slightly damp and there are numerous stalactites on the ceiling.")
