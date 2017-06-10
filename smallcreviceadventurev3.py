@@ -1,3 +1,6 @@
+# Get functions
+from functions import *
+
 print("~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~")
 print("~SMALL CREVICE ADVENTURE~~~~~~~~~~~~~_________~~~~~~~~~~~~~~~~~")
 print("~VERSION BETA~~~~~~~~~~~~~~~~~~~~~~~/~~~~~~~~~\~~~~~~~~~~~~~~~~")
@@ -8,7 +11,7 @@ print("~~~~~~~~~~~~CREATED BY ATTICUS BHAT AND LINUS SKUCAS~~~~~~~~~~~")
 print("~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~")
 import time
 print("blimey! you have fallen into a small crevice! you see that the crevice spits into a left and right passage.")
-cave_choice = input()
+cave_choice = getinput()
 
 if cave_choice == "L" or cave_choice =="LEFT":
   print("you enter the left cave. the walls are slightly damp and there are numerous stalactites on the ceiling.")
@@ -20,7 +23,7 @@ if cave_choice == "L" or cave_choice =="LEFT":
   print("there is also another passage leading off to the left.")
   time.sleep(1)
   print("do you get in the boat, swim down the river, or take the passage?")
-  river_choice =  input("put B for boat, S for swim, or W for walk.")
+  river_choice =  getinput("put B for boat, S for swim, or W for walk.")
 
   if river_choice == "W" or river_choice == "WALK":
     print("you walk to the passage and start down it.")
@@ -36,7 +39,7 @@ if cave_choice == "L" or cave_choice =="LEFT":
     print("there is a river leading away from the pool under the waterfall, which leads into a dark passage.")
     time.sleep(1)
     print("do you take the rope bridge, the stone bridge, or the river tunnel?")
-    waterfall_choice = input("put R for the rope bridge, S for the stone, or T for the river tunnel.")
+    waterfall_choice = getinput("put R for the rope bridge, S for the stone, or T for the river tunnel.")
 
     if waterfall_choice == "R" or waterfall_choice == "ROPE":
       print("you start across the rope bridge. it sways in the slight breeze blowing up from the chasm.")
@@ -44,7 +47,7 @@ if cave_choice == "L" or cave_choice =="LEFT":
       print("afler several minutes of careful crawling, you reach the other side of the chasm.")
       print("you see a passage leading up, a passage leading down, and a passage going straight.")
       print("do you take the upper passage, the lower passage, or the middle passage?")
-      chasm_choice = input("put U for the upper passage, L for the lower passage, or M for the middle passage.")
+      chasm_choice = getinput("put U for the upper passage, L for the lower passage, or M for the middle passage.")
 
       if chasm_choice == "U" or chasm_choice == "UP":
         print("")
@@ -97,7 +100,7 @@ elif cave_choice == "R" or cave_choice == "RIGHT":
   print("there is also a passage leading to the left.")
   time.sleep(1)
   print("do you climb down or keep walking?")
-  pit_choice = input("put C to climb or W to  walk.")
+  pit_choice = getinput("put C to climb or W to  walk.")
 
   if pit_choice == "C" or pit_choice == "CLIMB":
     print("you climb down the ladder and into darkness.")
