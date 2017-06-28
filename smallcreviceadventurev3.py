@@ -87,6 +87,7 @@ if cave_choice is "L" or cave_choice is"LEFT":
     print("there are diamonds here!")
     time.sleep(1)
     print("there is also a large dragon here!")
+    time.sleep(1)
     print("the dragon quickly toasts you to a crisp!")
     print("GAME OVER!! YOU LOSE!! :(")
 
