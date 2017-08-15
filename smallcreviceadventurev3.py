@@ -4,9 +4,9 @@ from functions import *
 print("~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~")
 print("~SMALL CREVICE ADVENTURE~~~~~~~~~~~~~_________~~~~~~~~~~~~~~~~~")
 print("~VERSION BETA~~~~~~~~~~~~~~~~~~~~~~~/~~~~~~~~~\~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|^^^^^^^^~|~~~~~~~~~~~~~~~~")
+print("~CAPITAL INPUT ONLY~~~~~~~~~~~~~~~~~|^^^^^^^^~|~~~~~~~~~~~~~~~~")
 print("~2017~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~||        |~\~~~~~~~~~~~~~~")
-print("~PYTHON VERSION~~~~~~~~~~~~~~~~~~~~/~|       |~|~~~~~~~~~~~~~~~")
+print("~PYTHON VERSION~~~~~~~~~~~~~~~~~~~~/~|        |~|~~~~~~~~~~~~~~")
 print("~~~~~~~~~~~~CREATED BY ATTICUS BHAT AND LINUS SKUCAS~~~~~~~~~~~")
 print("~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~")
 import time
@@ -39,7 +39,7 @@ if cave_choice is "L" or cave_choice is"LEFT":
     print("there is a river leading away from the pool under the waterfall, which leads into a dark passage.")
     time.sleep(1)
     print("do you take the rope bridge, the stone bridge, or the river tunnel?")
-    waterfall_choice = getinput("put R for the rope bridge, S for the stone, or T for the river tunnel.")
+    waterfall_choice = getinput()
 
     if waterfall_choice is "R" or waterfall_choice is "ROPE":
       print("you start across the rope bridge. it sways in the slight breeze blowing up from the chasm.")
@@ -108,7 +108,7 @@ elif cave_choice is "R" or cave_choice is "RIGHT":
   print("there is also a passage leading to the left.")
   time.sleep(1)
   print("do you climb down or keep walking?")
-  pit_choice = getinput("put C to climb or W to  walk.")
+  pit_choice = getinput("")
 
   if pit_choice is "C" or pit_choice is "CLIMB":
     print("you climb down the ladder and into darkness.")
@@ -142,12 +142,20 @@ elif cave_choice is "R" or cave_choice is "RIGHT":
         print("you walk up the upper passage.")
         time.sleep(1)
         print("there is a dwarf in the room with you!")
+        time.sleep(1)
         print("he throws an axe at you!")
         print("he misses, and the axe magically flies back to his hand,")
         print("he runs back through the passage from whence he came.")
 
       elif chasm_choice is "L" or chasm_choice is "LOW":
-        print("")
+        print("you walk down the low passage. it has a low ceiling and stretches down for quite a ways.")
+        time.sleep(2)
+        print("you come into a small room. there is a vending machine here!")
+        print("there is a dwarf in the room with you!")
+        print("he is holding a mean-looking knife!")
+        print("he throws the knife at you. it hits you in the stomach.")
+        print
+        
 
       elif chasm_choice is "M" or chasm_choice is "MIDDLE":
         print("")
